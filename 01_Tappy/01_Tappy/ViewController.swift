@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var counter = 0
+    var counter:Int = 0
     
     // MARK: Properties
     @IBOutlet weak var CounterLabel: UILabel!
@@ -29,8 +29,12 @@ class ViewController: UIViewController {
     // MARK: Actions
     @IBAction func tapAction(_ sender: UIButton) {
         counter += 1
-        CounterLabel.text = "\(counter)"
+        CounterLabel.text = String(counter)
         //print("Counter: \(counter)")
+    }
+    @IBAction func restCounter(_ sender: UIButton) {
+        counter = 0
+        CounterLabel.text = "0"
     }
 }
 
