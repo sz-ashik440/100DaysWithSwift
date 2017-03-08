@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         pauseButton.isEnabled = false
         resetButton.isEnabled = false
+        timeLabel.text = "00:00:00:00"
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,12 +41,13 @@ class ViewController: UIViewController {
                                           selector: #selector(ViewController.resetTime),
                                           userInfo: nil,
                                           repeats: true)
+        
+        self.startTime = Date.timeIntervalSinceReferenceDate
         if let time = self.elapsedTime {
             print(time)
-            self.startTime += time
-        } else {
-            self.startTime = Date.timeIntervalSinceReferenceDate
+            self.startTime -= time
         }
+        
         playButton.isEnabled = false
         pauseButton.isEnabled = true
         resetButton.isEnabled = true
@@ -63,9 +65,9 @@ class ViewController: UIViewController {
         self.elapsedTime = nil
         timer.invalidate()
         playButton.isEnabled = true
-        pauseButton.isEnabled = true
+        pauseButton.isEnabled = false
         resetButton.isEnabled = false
-        timeLabel.text = "00:00:00"
+        timeLabel.text = "00:00:00:00"
     }
     
     func resetTime() {
@@ -76,9 +78,11 @@ class ViewController: UIViewController {
         let hours = Int(self.elapsedTime!/3600)
         let minutes = Int(self.elapsedTime!/60)%3600
         let seconds = Int(self.elapsedTime!)%60
+        let fractions = Int(self.elapsedTime!*100)%100
         timeLabel.text = String(format: "%02d", hours) + ":" +
             String(format: "%02d", minutes) + ":" +
-            String(format: "%02d", seconds)
+            String(format: "%02d", seconds) + ":" +
+            String(format: "%02d", fractions)
     }
 }
 
