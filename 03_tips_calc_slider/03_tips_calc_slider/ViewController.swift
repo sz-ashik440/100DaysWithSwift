@@ -22,7 +22,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         // Added toolbar into keyboard
         self.addDoneButtonOnKeyboard()
         // preset tips value while launching app
@@ -36,17 +35,22 @@ class ViewController: UIViewController {
     }
     
     func addDoneButtonOnKeyboard() {
+        // create toolbar instance
         let toolbar:UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 50))
         toolbar.barStyle = UIBarStyle.default
         
+        // adding flexible space
         let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
         
+        // adding button inro toolbar
         let done: UIBarButtonItem = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.done, target: self, action: #selector(ViewController.doneButtonAction))
         
+        // create UIbuttonItem instance
         var items =  [UIBarButtonItem]()
         items.append(flexSpace)
         items.append(done)
         
+        // adding buttons into toolbar
         toolbar.items = items
         toolbar.sizeToFit()
         
@@ -54,7 +58,9 @@ class ViewController: UIViewController {
     }
     
     func doneButtonAction() {
+        // hid keyboard after clicking done
         self.billText.resignFirstResponder()
+        // set the tip label
         self.bill = Double(self.billText.text!)!
         billText.text = "$" + String(format: "%.2f", self.bill)
         self.calculateTips()
