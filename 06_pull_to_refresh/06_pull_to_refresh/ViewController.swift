@@ -33,7 +33,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     // MARK: refesh data
     func refresh() {
-        fruites += ["Melon", "Strawberry", "Kiwi", "Mango", "Coconut"]
+        fruites = ["Melon", "Strawberry", "Kiwi", "Mango", "Coconut"] + fruites
         
         // ending refresh after adding string into array
         if self.refreshController.isRefreshing {

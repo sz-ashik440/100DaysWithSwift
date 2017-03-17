@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AponaLohit.ttf">
+            <string>AponaLohit</string>
+        </array>
+        <array key="Siyamrupali.ttf">
+            <string>SiyamRupali</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_7_Custom_Font" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fault_tree" translatesAutoresizingMaskIntoConstraints="NO" id="iJc-hC-ttD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="বিদ্রোহী" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgY-16-kT8">
+                                <rect key="frame" x="16" y="28" width="343" height="75.5"/>
+                                <fontDescription key="fontDescription" name="SiyamRupali" family="Siyam Rupali" pointSize="50"/>
+                                <color key="textColor" red="0.99246276912856879" green="0.99522849340575625" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="কাজী নজরুল ইসলাম" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flJ-Jz-hGn">
+                                <rect key="frame" x="16" y="123.5" width="343" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="02R-Ru-9Qu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.99246276909999998" green="0.99522849339999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bkR-QM-rPZ">
+                                <rect key="frame" x="16" y="302" width="343" height="315"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XTt-2C-gwT">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="315"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="prM-q9-uP7">
+                                            <rect key="frame" x="8" y="8" width="327" height="299"/>
+                                            <mutableString key="text" base64-UTF8="YES">
+4Kas4KayIOCmrOCngOCmsC0KICAgIOCmrOCmsiDgpongpqjgp43gpqjgpqQg4Kau4KauIOCmtuCmv+Cm
+sCEKICAgIOCmtuCmv+CmsCDgpqjgp4fgprngpr7gprDgpr8g4KaG4Kau4Ka+4Kaw4Ka/IOCmqOCmpCDg
+prbgpr/gprAg4KaT4KaHIOCmtuCmv+CmluCmsCDgprngpr/gpq7gpr7gpqbgp43gprDgpr/gprAKICAg
+IOCmrOCmsiDgpqzgp4DgprAtCiAgICDgpqzgprIg4Kau4Ka54Ka+4Kas4Ka/4Ka24KeN4Kas4KeH4Kaw
+IOCmruCmueCmvuCmleCmvuCmtiDgpqvgpr7gpoHgp5zgpr8bGycKICAgIOCmmuCmqOCnjeCmpuCnjeCm
+sCDgprjgp4LgprDgp43gpq8g4KaX4KeN4Kaw4Ka5IOCmpOCmvuCmsOCmviDgppvgpr7gp5zgpr8nCiAg
+ICDgpq3gp4LgprLgp4vgppUg4Kam4KeN4Kav4KeB4Kay4KeL4KaVIOCml+Cni+CmsuCmlSDgpq3gp4fg
+pqbgpr/gp5/gpr4KICAgIOCmluCni+CmpuCmvuCmsCDgpobgprjgpqggJ+CmhuCmsOCmticg4Kab4KeH
+4Kam4Ka/4Kef4Ka+LAogICAg4KaJ4Kag4Ka/4Kef4Ka+4Kab4Ka/IOCmmuCmv+CmsC3gpqzgpr/gprjg
+p43gpq7gp58g4KaG4Kau4Ka/IOCmrOCmv+CmtuCnjeCmrC3gpqzgpr/gpqfgpr7gpqTgp43gprDgp4Dg
+prAhCiAgICDgpq7gpq4g4Kay4Kay4Ka+4Kaf4KeHIOCmsOCngeCmpuCnjeCmsCDgpq3gppfgpqzgpr7g
+pqgg4Kac4KeN4Kas4Kay4KeHIOCmsOCmvuCmnC3gprDgpr7gppwg4Kaf4KeA4KaV4Ka+LSDgpqbgp4Dg
+pqrgp43gpqQg4Kac4Kef4Ka24KeN4Kaw4KeA4KawIQogICAg4Kas4KayIOCmrOCngOCmsC0KICAgIOCm
+huCmruCmvyDgpprgpr/gprAt4KaJ4Kao4KeN4Kao4KakIOCmtuCmv+CmsBshA
+</mutableString>
+                                            <fontDescription key="fontDescription" name="AponaLohit" family="AponaLohit" pointSize="19"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="prM-q9-uP7" secondAttribute="trailing" constant="8" id="IKy-6y-4XO"/>
+                                        <constraint firstItem="prM-q9-uP7" firstAttribute="top" secondItem="XTt-2C-gwT" secondAttribute="top" constant="8" id="P3Y-Op-kJA"/>
+                                        <constraint firstItem="prM-q9-uP7" firstAttribute="leading" secondItem="XTt-2C-gwT" secondAttribute="leading" constant="8" id="Yth-2Z-pLr"/>
+                                        <constraint firstAttribute="bottom" secondItem="prM-q9-uP7" secondAttribute="bottom" constant="8" id="lnW-Yc-FFx"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="315" id="Uuk-eg-H10"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iJc-hC-ttD" secondAttribute="bottom" id="7HS-hc-mna"/>
+                            <constraint firstItem="dgY-16-kT8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="94o-ps-Czk"/>
+                            <constraint firstItem="flJ-Jz-hGn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="AQ0-ts-5sH"/>
+                            <constraint firstItem="iJc-hC-ttD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GhJ-pa-sbQ"/>
+                            <constraint firstItem="dgY-16-kT8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JVu-Zx-5H8"/>
+                            <constraint firstItem="flJ-Jz-hGn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Jjv-7S-0ll"/>
+                            <constraint firstItem="dgY-16-kT8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Y6v-LN-3aS"/>
+                            <constraint firstAttribute="trailing" secondItem="iJc-hC-ttD" secondAttribute="trailing" id="eCl-uF-Ssp"/>
+                            <constraint firstItem="bkR-QM-rPZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fks-h2-Zi8"/>
+                            <constraint firstItem="bkR-QM-rPZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hQL-GV-DCF"/>
+                            <constraint firstItem="flJ-Jz-hGn" firstAttribute="top" secondItem="dgY-16-kT8" secondAttribute="bottom" constant="20" id="iBG-vx-WFX"/>
+                            <constraint firstItem="iJc-hC-ttD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rCy-NH-kNx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bkR-QM-rPZ" secondAttribute="bottom" constant="50" id="vD8-Rv-XmF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fault_tree" width="600" height="600"/>
+    </resources>
+</document>
