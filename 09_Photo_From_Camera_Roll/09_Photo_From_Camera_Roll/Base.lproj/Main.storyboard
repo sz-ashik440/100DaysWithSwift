@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_9_Photo_From_Camera_Roll" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s02-1z-ADD">
+                                <rect key="frame" x="0.0" y="16" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Imagy" id="YRA-zX-n75">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="aze-I3-iWZ">
+                                            <connections>
+                                                <action selector="SelectImage:" destination="BYZ-38-t0r" id="YQH-rC-dnr"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image from Camera Roll" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9B4-6x-Qio">
+                                <rect key="frame" x="16" y="80" width="288" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0jd-Kq-JWi">
+                                <rect key="frame" x="16" y="161.5" width="288" height="303"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0jd-Kq-JWi" secondAttribute="height" multiplier="96:101" id="b8L-pH-SWx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="s02-1z-ADD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="16" id="2bg-0k-KkP"/>
+                            <constraint firstAttribute="trailing" secondItem="s02-1z-ADD" secondAttribute="trailing" id="Cri-CS-EOJ"/>
+                            <constraint firstItem="9B4-6x-Qio" firstAttribute="top" secondItem="s02-1z-ADD" secondAttribute="bottom" constant="20" id="OVj-0n-Lir"/>
+                            <constraint firstItem="0jd-Kq-JWi" firstAttribute="top" secondItem="9B4-6x-Qio" secondAttribute="bottom" constant="50" id="cAy-aW-iWg"/>
+                            <constraint firstItem="9B4-6x-Qio" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fgs-I8-KmI"/>
+                            <constraint firstItem="0jd-Kq-JWi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ko4-Sk-8Ch"/>
+                            <constraint firstItem="9B4-6x-Qio" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nIe-cG-jNh"/>
+                            <constraint firstItem="s02-1z-ADD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rou-sw-NdK"/>
+                            <constraint firstItem="0jd-Kq-JWi" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="yP8-ZF-cYO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="0jd-Kq-JWi" id="QBy-h1-Fsm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114.375" y="122.53521126760563"/>
+        </scene>
+    </scenes>
+</document>
