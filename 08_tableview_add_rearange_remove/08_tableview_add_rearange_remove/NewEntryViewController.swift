@@ -11,24 +11,27 @@ import UIKit
 class NewEntryViewController: UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var todoText: UITextField!
+    
     var passedData: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // set delegate for textfield
         todoText.delegate = self
     }
     
-    @IBAction func saveToData(_ sender: UIButton) {
+    // before performing segue, set data into passedData
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         passedData = todoText.text
+    }
+    
+    @IBAction func saveToData(_ sender: UIButton) {
+        // passedData = todoText.text
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        passedData = todoText.text
     }
 }

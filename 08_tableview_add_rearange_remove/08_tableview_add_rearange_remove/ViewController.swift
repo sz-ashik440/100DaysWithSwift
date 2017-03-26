@@ -77,7 +77,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // - from newentry viewcontroller
     @IBAction func unwindBackData(sender: UIStoryboardSegue) {
         if let recivedVC = sender.source as? NewEntryViewController {
-            todoData.append(recivedVC.passedData!)
+            if let data = recivedVC.passedData {
+                todoData.append(data)
+            }else {
+                print("Something went wrong in unwinding")
+            }
         }
         todoTable.reloadData()
     }
