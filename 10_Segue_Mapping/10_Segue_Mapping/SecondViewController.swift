@@ -27,16 +27,18 @@ class SecondViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let secondVC = segue.destination as! SecondViewController
-        secondVC.counter = counter!
+        if segue.identifier == "unwindToRoot" {
+            let controller = segue.destination as! ViewController
+            controller.counter = counter! + 1
+            controller.counterLabel.text = String(counter! + 1)
+        }else {
+            let controller = segue.destination as! SecondViewController
+            controller.counter = counter!
+        }
     }
     
     @IBAction func toFourthView(_ sender: UIButton) {
         performSegue(withIdentifier: "tree_1View_2", sender: self)
-    }
-    
-    @IBAction func toFifthView(_ sender: Any) {
-        print("Third view")
     }
     
     @IBAction func gotoRootView(_ sender: UIButton) {
