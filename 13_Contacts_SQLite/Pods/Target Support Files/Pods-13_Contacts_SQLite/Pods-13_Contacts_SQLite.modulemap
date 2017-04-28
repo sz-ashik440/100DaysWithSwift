@@ -1,0 +1,6 @@
+framework module Pods_13_Contacts_SQLite {
+  umbrella header "Pods-13_Contacts_SQLite-umbrella.h"
+
+  export *
+  module * { export * }
+}
