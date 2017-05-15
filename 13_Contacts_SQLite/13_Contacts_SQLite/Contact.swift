@@ -24,3 +24,8 @@ struct Contact{
         self.address = address
     }
 }
+
+struct ContactPhone{
+    var contact: Contact
+    var phones: [Phone]
+}

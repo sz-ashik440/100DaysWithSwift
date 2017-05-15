@@ -9,22 +9,24 @@
 import Foundation
 import SQLite
 
-class PhoneDataHelper: DataBaseHelperProtocol{
-    typealias T = Phone
-    
+class PhoneDataHelper{
+    // Table name
     static let TABLE_NAME = "Phones"
     
     static let phones = Table(TABLE_NAME)
+    
+    // tables entries
     static let phoneID = Expression<Int64>("id")
-    static let userID = Expression<Int64>("userID")
+    static let contactID = Expression<Int64>("contactID")
     static let type = Expression<String>("type")
     static let number = Expression<String>("number")
     
+    // MARK:- creating the database
     static func createTable() {
         do {
-            try DBManager.instance.db!.run(phones.create(ifNotExists: true){table in
+            try DBManager.instance.db!.run(phones.create(ifNotExists: true){ table in
                 table.column(phoneID, primaryKey: true)
-                table.column(userID)
+                table.column(contactID)
                 table.column(type)
                 table.column(number)
             })
@@ -33,9 +35,10 @@ class PhoneDataHelper: DataBaseHelperProtocol{
         }
     }
     
+    // MARK:- inserting entry into database
     static func insert(item: Phone) -> Int64 {
         do {
-            let insert = phones.insert(userID <- item.userID, type <- item.type, number <- item.number)
+            let insert = phones.insert(contactID <- item.contactID, type <- item.type, number <- item.number)
             let id = try DBManager.instance.db!.run(insert)
             return id
         } catch {
@@ -44,6 +47,7 @@ class PhoneDataHelper: DataBaseHelperProtocol{
         }
     }
     
+    // MARK:- deleteing entry from database
     static func delete(cID: Int64) -> Bool {
         do {
             let phone = phones.filter(phoneID==cID)
@@ -55,11 +59,13 @@ class PhoneDataHelper: DataBaseHelperProtocol{
         return false
     }
     
-    static func getAll() -> [Phone]? {
+    // MARK:- get phone numbers by contactID
+    static func getPhones(by cID: Int64) -> [Phone] {
         var phoneData: [Phone] = []
-        do {
-            for phone in try DBManager.instance.db!.prepare(self.phones) {
-                phoneData.append(Phone(id: phone[phoneID], userID: phone[userID], type: phone[type], number: phone[number]))
+        do{
+            let query = phones.filter(self.contactID==cID)
+            for phone in try DBManager.instance.db!.prepare(query) {
+                phoneData.append(Phone(id: phone[phoneID], contactID: phone[contactID], type: phone[type], number: phone[number]))
             }
         } catch {
             print("Failed getting data")
@@ -67,11 +73,26 @@ class PhoneDataHelper: DataBaseHelperProtocol{
         return phoneData
     }
     
+    // MARK:- get all phone numbers
+    static func getAll() -> [Phone]? {
+        var phoneData: [Phone] = []
+        do {
+            for phone in try DBManager.instance.db!.prepare(self.phones) {
+                phoneData.append(Phone(id: phone[phoneID], contactID: phone[contactID], type: phone[type], number: phone[number]))
+            }
+        } catch {
+            print("Failed getting data")
+        }
+        return phoneData
+    }
+    
+    // MARK:- Drop the table
     static func dropTable() {
         do{
             try DBManager.instance.db?.run(phones.drop())
+            print("Droped Phone table")
         } catch{
-            print("Could not drop Table")
+            print("Could not drop phone Table")
         }
     }
 }

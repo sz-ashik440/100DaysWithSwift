@@ -35,4 +35,9 @@ class DBManager{
         ContactDataHelper.createTable()
         PhoneDataHelper.createTable()
     }
+    
+    func dropTable() {
+        ContactDataHelper.dropTable()
+        PhoneDataHelper.dropTable()
+    }
 }

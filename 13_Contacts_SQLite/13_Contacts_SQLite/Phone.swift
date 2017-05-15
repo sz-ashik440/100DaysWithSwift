@@ -11,20 +11,20 @@ import Foundation
 
 struct Phone{
     var id: Int64
-    var userID: Int64
+    var contactID: Int64
     var type: String
     var number: String
     
-    init(userID: Int64, type: String, number: String) {
+    init(contactID: Int64, type: String, number: String) {
         self.id = 0
-        self.userID = userID
+        self.contactID = contactID
         self.type = type
         self.number = number
     }
     
-    init(id: Int64, userID: Int64, type: String, number: String) {
+    init(id: Int64, contactID: Int64, type: String, number: String) {
         self.id = id
-        self.userID = userID
+        self.contactID = contactID
         self.type = type
         self.number = number
     }

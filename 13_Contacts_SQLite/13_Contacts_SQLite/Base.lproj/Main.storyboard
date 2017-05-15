@@ -48,29 +48,53 @@
                             <outlet property="delegate" destination="pYb-QF-8c4" id="GLI-1J-rZr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Contacts" id="omX-Q1-WdX"/>
+                    <navigationItem key="navigationItem" title="Contacts" id="omX-Q1-WdX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="x6V-gK-eKP">
+                            <connections>
+                                <segue destination="akf-vl-aYV" kind="show" id="LEK-xL-QCz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8og-m1-Xcv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="485.60000000000002" y="-98.50074962518741"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="Qw9-ud-7v9">
+        <scene sceneID="bkb-Ol-OYC">
             <objects>
-                <viewController id="HkC-7M-fDw" sceneMemberID="viewController">
+                <viewController id="akf-vl-aYV" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="50v-Tt-vNJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wth-If-YRl"/>
+                        <viewControllerLayoutGuide type="top" id="hea-WG-z2o"/>
+                        <viewControllerLayoutGuide type="bottom" id="eym-y0-lkQ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xmR-cJ-C8m">
+                    <view key="view" contentMode="scaleToFill" id="dF0-qk-JNs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i18-Bp-pWi">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.12524798512500002" green="0.73145300150000003" blue="0.55582682291666663" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2fr-mL-sSP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="ADD">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="i18-Bp-pWi" secondAttribute="trailing" id="L9S-CL-tsA"/>
+                            <constraint firstItem="eym-y0-lkQ" firstAttribute="top" secondItem="i18-Bp-pWi" secondAttribute="bottom" id="dnc-17-vdB"/>
+                            <constraint firstItem="i18-Bp-pWi" firstAttribute="leading" secondItem="dF0-qk-JNs" secondAttribute="leading" id="zhX-z9-NVb"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Uhk-ZD-d6n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vmf-7k-FeR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1954" y="-50"/>
+            <point key="canvasLocation" x="1261.5999999999999" y="-99.400299850074973"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QSO-L9-QPb">

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2FBF6B238FE9FCD6113C51B3 /* Pods_13_Contacts_SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 674DEDC426BC6368EE6FDD04 /* Pods_13_Contacts_SQLite.framework */; };
-		84C1CC341EB24DEC002B974C /* DataBaseHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1CC331EB24DEC002B974C /* DataBaseHelperProtocol.swift */; };
 		84C1CC361EB250E1002B974C /* ContactDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1CC351EB250E1002B974C /* ContactDataHelper.swift */; };
 		84C1CC3D1EB29232002B974C /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1CC3C1EB29232002B974C /* Phone.swift */; };
 		84C1CC3F1EB29D38002B974C /* PhoneDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1CC3E1EB29D38002B974C /* PhoneDataHelper.swift */; };
@@ -23,7 +22,6 @@
 
 /* Begin PBXFileReference section */
 		674DEDC426BC6368EE6FDD04 /* Pods_13_Contacts_SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_13_Contacts_SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		84C1CC331EB24DEC002B974C /* DataBaseHelperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseHelperProtocol.swift; sourceTree = "<group>"; };
 		84C1CC351EB250E1002B974C /* ContactDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDataHelper.swift; sourceTree = "<group>"; };
 		84C1CC3C1EB29232002B974C /* Phone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
 		84C1CC3E1EB29D38002B974C /* PhoneDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneDataHelper.swift; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				84CEB3361EB1E32700A3E68E /* DBManager.swift */,
-				84C1CC331EB24DEC002B974C /* DataBaseHelperProtocol.swift */,
 				84C1CC351EB250E1002B974C /* ContactDataHelper.swift */,
 				84C1CC3E1EB29D38002B974C /* PhoneDataHelper.swift */,
 			);
@@ -253,7 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84C1CC341EB24DEC002B974C /* DataBaseHelperProtocol.swift in Sources */,
 				84CEB3391EB1E7CE00A3E68E /* Contact.swift in Sources */,
 				84C1CC361EB250E1002B974C /* ContactDataHelper.swift in Sources */,
 				84CEB3271EB1DC1E00A3E68E /* ViewController.swift in Sources */,
