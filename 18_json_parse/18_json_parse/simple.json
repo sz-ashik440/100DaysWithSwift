@@ -1,0 +1,41 @@
+{
+  "menu": {
+    "food": [
+      {
+        "name": "Belgian Waffles",
+        "price": "$5.95",
+        "description": "two of our famous Belgian Waffles with plenty of real maple syrup",
+        "image": "https://i1.wp.com/www.thekitchenwhisperer.net/wp-content/uploads/2014/04/BelgianWaffles7.jpg",
+        "calories": "650"
+      },
+      {
+        "name": "Strawberry Belgian Waffles",
+        "price": "$7.95",
+        "description": "light Belgian waffles covered with strawberrys and whipped cream",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Waffle_with_strawberries_and_confectioner%27s_sugar.jpg/1024px-Waffle_with_strawberries_and_confectioner%27s_sugar.jpg",
+        "calories": "900"
+      },
+      {
+        "name": "Berry-Berry Belgian Waffles",
+        "price": "$8.95",
+        "description": "light Belgian waffles covered with an assortment of fresh berries and whipped cream",
+        "image": "https://cdn2.hubspot.net/hubfs/232760/1_recipe_redux/blueberry-belgian-waffles-web-1.jpg",
+        "calories": "900"
+      },
+      {
+        "name": "French Toast",
+        "price": "$4.50",
+        "description": "thick slices made from our homemade sourdough bread",
+        "image": "https://www.bobevans.com/-/media/bobevans_com/images/our-restaurants/08182015fallmenu/briocheftoast_reg.jpg",
+        "calories": "600"
+      },
+      {
+        "name": "Homestyle Breakfast",
+        "price": "$11.95",
+        "description": "two eggs, bacon or sausage, toast, and our ever-popular pan cakes",
+        "image": "https://media-cdn.tripadvisor.com/media/photo-s/08/dc/c0/d7/one-of-the-best-homemade.jpg",
+        "calories": "950"
+      }
+    ]
+  }
+}
